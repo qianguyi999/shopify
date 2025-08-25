@@ -1,0 +1,523 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVELUCK | Brand &amp; VI Design Agency</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1A365D',      // Deep blue - professional, trustworthy
+                        secondary: '#FF6B35',    // Energetic orange - creative, attention-grabbing
+                        neutral: {
+                            100: '#F7FAFC',
+                            200: '#EDF2F7',
+                            300: '#E2E8F0',
+                            400: '#CBD5E0',
+                            500: '#A0AEC0',
+                            600: '#718096',
+                            700: '#4A5568',
+                            800: '#2D3748',
+                            900: '#1A202C',
+                        }
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-balance {
+                text-wrap: balance;
+            }
+            .animate-float {
+                animation: float 6s ease-in-out infinite;
+            }
+            .animate-float-delay {
+                animation: float 6s ease-in-out 2s infinite;
+            }
+            .clip-path-slant {
+                clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            }
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+
+<body class="font-inter text-neutral-800 bg-neutral-100 overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="relative bg-primary clip-path-slant min-h-screen flex items-center pt-16">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute -right-20 -top-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl"></div>
+            <div class="absolute left-1/4 bottom-0 w-72 h-72 bg-secondary/10 rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 md:px-8 py-20 md:py-32 relative z-10">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold text-white leading-tight mb-6">
+                        GIVELUCK<br>
+                        <span class="text-secondary">Brand &amp; VI Design</span>
+                    </h1>
+                    <p class="text-[clamp(1rem,2vw,1.25rem)] text-neutral-200 mb-8 max-w-xl text-balance">We craft distinctive brand identities and comprehensive visual systems that help your business stand out and connect with your audience.</p>
+                    
+                    <div class="mt-16 flex items-center">
+                        <div class="flex -space-x-4">
+                            <img src="https://picsum.photos/id/1001/100/100" alt="Client" class="w-12 h-12 rounded-full border-2 border-primary">
+                            <img src="https://picsum.photos/id/1002/100/100" alt="Client" class="w-12 h-12 rounded-full border-2 border-primary">
+                            <img src="https://picsum.photos/id/1003/100/100" alt="Client" class="w-12 h-12 rounded-full border-2 border-primary">
+                            <img src="https://picsum.photos/id/1004/100/100" alt="Client" class="w-12 h-12 rounded-full border-2 border-primary">
+                        </div>
+                        <div class="ml-6">
+                            <div class="flex items-center text-yellow-400 mb-1">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
+                            <p class="text-neutral-200">The Customer's Evaluation of us</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2 relative">
+                    <div class="relative z-10 animate-float">
+                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/d50c8c6869ef4b128a18afa9ee96576f~tplv-a9rns2rl98-image.image?rcl=2025082014590027791D12462A6AA50BC4&amp;rk3s=8e244e95&amp;rrcfp=2609e108&amp;x-expires=1756277943&amp;x-signature=DObUvKkX1IK4tmXjwl9y9zlSM3Y%3D" alt="Design team collaborating on brand projects" class="rounded-lg shadow-2xl">
+                    </div>
+                    <div class="absolute -bottom-10 -left-10 w-64 h-64 bg-primary border-4 border-secondary rounded-lg z-0 animate-float-delay"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
+            <a href="#services" aria-label="Scroll down"><i class="fa fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-neutral-100">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-neutral-900 mb-4">Our Branding Services</h2>
+                <p class="text-neutral-600 text-lg">Comprehensive solutions to build, refresh, and elevate your brand's visual identity in the market.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <i class="fa fa-paint-brush text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Brand Identity Design</h3>
+                    <p class="text-neutral-600 mb-6">Complete visual identity systems including logos, color palettes, typography, and brand guidelines tailored for your target audience.</p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <i class="fa fa-object-group text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">VI System Design</h3>
+                    <p class="text-neutral-600 mb-6">Comprehensive visual identity applications ensuring consistent brand presentation across all touchpoints and marketing materials.</p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <i class="fa fa-refresh text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Brand Refresh</h3>
+                    <p class="text-neutral-600 mb-6">Strategic updates to existing brand identities to better resonate with current markets while preserving brand equity.</p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <i class="fa fa-bullhorn text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Marketing Collateral</h3>
+                    <p class="text-neutral-600 mb-6">Design of brochures, business cards, presentations, and other marketing materials that reflect your brand identity.</p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <i class="fa fa-globe text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Digital Branding</h3>
+                    <p class="text-neutral-600 mb-6">Brand-aligned digital assets including social media kits, email templates, and website visual elements.</p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow group">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <i class="fa fa-lightbulb-o text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Brand Strategy</h3>
+                    <p class="text-neutral-600 mb-6">Strategic guidance on brand positioning, messaging, and market differentiation to maximize impact in competitive markets.</p>
+                    <a href="#contact" class="inline-flex items-center text-primary font-medium hover:text-secondary transition-colors">
+                        Learn more <i class="fa fa-arrow-right ml-2 group-hover:ml-3 transition-all"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-24 bg-neutral-900 text-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold mb-4">Our Design Process</h2>
+                <p class="text-neutral-400 text-lg">A structured yet flexible approach to delivering brand identities that align with your business goals and resonate with your audience.</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Process Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-primary/50 transform -translate-x-1/2"></div>
+                
+                <!-- Process Steps -->
+                <div class="space-y-16 relative">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 md:text-right mb-8 md:mb-0 md:order-1 order-2">
+                            <h3 class="text-2xl font-bold mb-4 text-secondary">Discovery &amp; Strategy</h3>
+                            <p class="text-neutral-400 mb-4">We begin by understanding your business, market position, target audience, and goals through in-depth discussions and research.</p>
+                            <ul class="text-neutral-400 space-y-2 md:ml-auto md:w-max">
+                                <li>• Market and competitor analysis</li>
+                                <li>• Brand positioning workshop</li>
+                                <li>• Audience research</li>
+                                <li>• Project scope definition</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center z-10 mb-8 md:mb-0 md:order-2 order-1">
+                            <span class="font-bold">01</span>
+                        </div>
+                        
+                        <div class="md:w-1/2 md:pl-16 hidden md:block md:order-3"></div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 hidden md:block md:order-1"></div>
+                        
+                        <div class="md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center z-10 mb-8 md:mb-0 md:order-2 order-1">
+                            <span class="font-bold">02</span>
+                        </div>
+                        
+                        <div class="md:w-1/2 md:pl-16 mb-8 md:mb-0 md:order-3 order-2">
+                            <h3 class="text-2xl font-bold mb-4 text-secondary">Concept Development</h3>
+                            <p class="text-neutral-400 mb-4">Our design team creates multiple visual concepts based on the strategic direction, exploring different approaches to your brand identity.</p>
+                            <ul class="text-neutral-400 space-y-2">
+                                <li>• Initial concept presentations</li>
+                                <li>• Visual direction exploration</li>
+                                <li>• Logo design variations</li>
+                                <li>• Preliminary feedback integration</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 md:text-right mb-8 md:mb-0 md:order-1 order-2">
+                            <h3 class="text-2xl font-bold mb-4 text-secondary">Refinement &amp; Approval</h3>
+                            <p class="text-neutral-400 mb-4">We refine the chosen concept based on your feedback, iterating until we achieve a brand identity that meets your expectations.</p>
+                            <ul class="text-neutral-400 space-y-2 md:ml-auto md:w-max">
+                                <li>• Concept refinement</li>
+                                <li>• Color palette finalization</li>
+                                <li>• Typography selection</li>
+                                <li>• Final identity approval</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center z-10 mb-8 md:mb-0 md:order-2 order-1">
+                            <span class="font-bold">03</span>
+                        </div>
+                        
+                        <div class="md:w-1/2 md:pl-16 hidden md:block md:order-3"></div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 hidden md:block md:order-1"></div>
+                        
+                        <div class="md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center z-10 mb-8 md:mb-0 md:order-2 order-1">
+                            <span class="font-bold">04</span>
+                        </div>
+                        
+                        <div class="md:w-1/2 md:pl-16 mb-8 md:mb-0 md:order-3 order-2">
+                            <h3 class="text-2xl font-bold mb-4 text-secondary">VI System Development</h3>
+                            <p class="text-neutral-400 mb-4">We extend the core identity into a comprehensive visual system that ensures consistent application across all touchpoints.</p>
+                            <ul class="text-neutral-400 space-y-2">
+                                <li>• Brand guideline creation</li>
+                                <li>• Application design</li>
+                                <li>• Template development</li>
+                                <li>• Usage specifications</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-16 md:text-right mb-8 md:mb-0 md:order-1 order-2">
+                            <h3 class="text-2xl font-bold mb-4 text-secondary">Delivery &amp; Implementation</h3>
+                            <p class="text-neutral-400 mb-4">We provide all necessary files and support to ensure a smooth implementation of your new brand identity across all platforms.</p>
+                            <ul class="text-neutral-400 space-y-2 md:ml-auto md:w-max">
+                                <li>• Final file delivery</li>
+                                <li>• Implementation guidance</li>
+                                <li>• Asset library setup</li>
+                                <li>• Ongoing support options</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="md:w-12 md:h-12 bg-secondary rounded-full flex items-center justify-center z-10 mb-8 md:mb-0 md:order-2 order-1">
+                            <span class="font-bold">05</span>
+                        </div>
+                        
+                        <div class="md:w-1/2 md:pl-16 hidden md:block md:order-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <img src="https://p9-flow-imagex-sign.byteimg.com/tos-cn-i-a9rns2rl98/rc/pc/code_assistant/7c7757c3afe94e28a46c1af01b03681b~tplv-a9rns2rl98-image.image?rcl=20250820153448E6C9426293033AC5BE1D&amp;rk3s=8e244e95&amp;rrcfp=2609e108&amp;x-expires=1756280091&amp;x-signature=uK14OEXKiuz8pEIZUhT4Ju8%2FwRI%3D" alt="Our design team" class="rounded-xl shadow-xl w-full">
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-neutral-900 mb-6">About GIVELUCK</h2>
+                    <p class="text-neutral-600 mb-6 text-lg">GIVELUCK is a branding agency specializing in creating strategic brand identities. We understand what resonates in today's market.</p>
+                    <p class="text-neutral-600 mb-8">Our team of designers, strategists, and brand experts combines creative excellence with market insight to develop visual identities that not only look exceptional but also drive business results.</p>
+                    
+                    <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div>
+                            <h3 class="font-bold text-xl mb-2 flex items-center">
+                                <span class="text-secondary mr-2"><i class="fa fa-check-circle"></i></span>
+                                Client Focused
+                            </h3>
+                            <p class="text-neutral-600">Your goals become our priorities throughout the design process.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2 flex items-center">
+                                <span class="text-secondary mr-2"><i class="fa fa-check-circle"></i></span>
+                                Strategic Approach
+                            </h3>
+                            <p class="text-neutral-600">Design decisions are always grounded in business strategy.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2 flex items-center">
+                                <span class="text-secondary mr-2"><i class="fa fa-check-circle"></i></span>
+                                Market Expertise
+                            </h3>
+                            <p class="text-neutral-600">Deep understanding of consumer behavior and trends.</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-xl mb-2 flex items-center">
+                                <span class="text-secondary mr-2"><i class="fa fa-check-circle"></i></span>
+                                Collaborative Process
+                            </h3>
+                            <p class="text-neutral-600">Working closely with you at every stage of development.</p>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="inline-block bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-md text-lg font-medium transition-all transform hover:scale-105">
+                        Work With Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-primary clip-path-slant">
+        <div class="container mx-auto px-4 md:px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-[clamp(1.5rem,3vw,2.5rem)] font-bold text-white mb-4">Let's Discuss Your Project</h2>
+                    <p class="text-neutral-200 text-lg">Ready to transform your brand identity? Contact us to schedule a consultation and learn how we can help your business stand out in the market.</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-2xl p-8 md:p-12">
+                    <div class="grid md:grid-cols-5 gap-8">
+                        <div class="md:col-span-2">
+                            <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                            <div class="space-y-6">
+                                <div class="flex items-start">
+                                    <div class="w-10 h-10 bg-primary/10 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                                        <i class="fa fa-envelope text-primary"></i>
+                                    </div>
+                                    <div>
+                                        <h4 class="font-bold mb-1">Email</h4>
+                                        <p class="text-neutral-600">Bella@qianguyi.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="md:col-span-3">
+                            <h3 class="text-2xl font-bold mb-6">Send Us a Message</h3>
+                            <!-- 添加 id 以便在 JS 中選取 -->
+                        <form id="contact-form" class="bg-light p-8 rounded-xl shadow-lg">
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                    <input type="text" id="first-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                                    <input type="text" id="last-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="company" class="block text-gray-700 font-medium mb-2">Company Name *</label>
+                                <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                                    <option value="">Select a service</option>
+                                    <option value="seo">SEO Optimization</option>
+                                    <option value="ads">Google Ads Management</option>
+                                    <option value="analytics">Traffic Analytics</option>
+                                    <option value="all">Complete Traffic Package</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Tell Us About Your Goals</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                Send Message
+                            </button>
+                            
+                            <p class="text-gray-500 text-sm mt-4 text-center">
+                                By submitting, you agree to our Privacy Policy and Terms of Service
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal/Popup for Thank You Message -->
+    <!-- 更新後的樣式：淡藍色玻璃質感，圓角更大，文字改為兩行並使用白色 -->
+    <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 backdrop-blur-sm">
+        <div class="bg-blue-200/50 p-8 rounded-3xl shadow-2xl text-center border border-blue-300/50 backdrop-blur-xl">
+            <!-- 調整為兩行文字 -->
+            <p class="text-2xl font-poppins font-bold text-white text-shadow mb-2">Thank you</p>
+            <p class="text-lg font-poppins text-white text-shadow">we will reply you as soon as possible</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 40,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate elements on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('animate-visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // 新增的程式碼：處理表單提交並顯示彈出框
+        const contactForm = document.getElementById('contact-form');
+        const modal = document.getElementById('modal');
+
+        contactForm.addEventListener('submit', function(event) {
+            // 阻止表單的默認提交行為，防止頁面刷新
+            event.preventDefault();
+
+            // 顯示彈出框
+            modal.classList.remove('hidden');
+
+            // 3秒後隱藏彈出框
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 3000);
+        });
+    </script>
+    </body></html>

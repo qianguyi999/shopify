@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SocialBoost | TikTok & Facebook Advertising Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        accent: '#722ED1',
+                        dark: '#1D2129',
+                        light: '#F2F3F5'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-custom {
+                transition: all 0.3s ease;
+            }
+            .card-hover {
+                @apply hover:shadow-xl hover:-translate-y-1 transition-all duration-300;
+            }
+        }
+    </style>
+</head>
+<body class="font-inter text-dark bg-white">
+    <!-- Hero Section -->
+    <section class="pt-20 pb-20 md:pt-32 md:pb-32 bg-gradient-to-br from-light to-white overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-dark mb-6">
+                        Grow Your Business with <span class="text-primary">TikTok & Facebook</span> Advertising
+                    </h1>
+                    <p class="text-lg text-dark/70 mb-8 max-w-xl">
+                        We create high-performing social media campaigns that drive traffic, generate leads, and increase sales for businesses.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg transition-custom font-semibold text-center">
+                            Start Your Campaign
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl">
+                        <img src="https://picsum.photos/id/1/600/400" alt="Social media advertising dashboard showing campaign performance" class="w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-64 h-64 bg-primary/10 rounded-full blur-3xl z-0"></div>
+                    <div class="absolute -top-6 -right-6 w-64 h-64 bg-accent/10 rounded-full blur-3xl z-0"></div>
+                    
+                    <!-- Stats cards -->
+                    <div class="absolute -bottom-8 -left-8 bg-white p-4 rounded-xl shadow-lg z-20">
+                        <p class="text-sm text-dark/60">Average ROI</p>
+                        <p class="text-2xl font-bold text-primary">327%</p>
+                    </div>
+                    
+                    <div class="absolute -top-8 -right-8 bg-white p-4 rounded-xl shadow-lg z-20">
+                        <p class="text-sm text-dark/60">Campaigns Managed</p>
+                        <p class="text-2xl font-bold text-accent">500+</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold mb-4">Our Advertising Services</h2>
+                <p class="text-lg text-dark/70">We specialize in creating data-driven social media advertising campaigns that deliver measurable results for your business.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- TikTok Ads Service -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover border border-dark/5">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-play-circle text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">TikTok Advertising</h3>
+                    <p class="text-dark/70 mb-6">Reach the fastest-growing social media audience with highly engaging TikTok ad campaigns tailored to your brand.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Creative ad content production</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Audience targeting & optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>In-Feed & Story ad formats</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Influencer collaboration campaigns</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium flex items-center hover:underline">
+                        Learn more <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Facebook Ads Service -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover border border-dark/5">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-thumbs-up text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Facebook Advertising</h3>
+                    <p class="text-dark/70 mb-6">Leverage the most powerful targeting capabilities to reach your ideal customers on Facebook and Instagram.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Custom audience development</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Conversion-focused ad campaigns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Retargeting & remarketing strategies</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Multi-platform campaign management</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium flex items-center hover:underline">
+                        Learn more <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Integrated Services -->
+                <div class="bg-white p-8 rounded-xl shadow-md card-hover border border-dark/5">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-line-chart text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Integrated Strategies</h3>
+                    <p class="text-dark/70 mb-6">Combine the power of TikTok and Facebook advertising with comprehensive strategies for maximum impact.</p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Cross-platform campaign coordination</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Performance analysis & reporting</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Budget optimization across platforms</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span>Continuous A/B testing & improvement</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium flex items-center hover:underline">
+                        Learn more <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Performance Metrics -->
+    <section class="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold mb-4">Proven Results</h2>
+                <p class="text-lg text-dark/70">Our data-driven approach delivers exceptional ROI for our clients across industries.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <canvas id="performanceChart" width="400" height="300"></canvas>
+                </div>
+                
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="text-4xl font-bold text-primary mb-2">+247%</div>
+                        <p class="text-dark/70">Average increase in conversion rate</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="text-4xl font-bold text-primary mb-2">+189%</div>
+                        <p class="text-dark/70">Average ROI on ad spend</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="text-4xl font-bold text-primary mb-2">+312%</div>
+                        <p class="text-dark/70">Average increase in website traffic</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <div class="text-4xl font-bold text-primary mb-2">+94%</div>
+                        <p class="text-dark/70">Average improvement in CTR</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Process -->
+    <section id="process" class="py-20 bg-light">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold mb-4">Our Proven Process</h2>
+                <p class="text-lg text-dark/70">We follow a systematic approach to deliver exceptional results for your social media advertising campaigns.</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Process Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-primary/20 transform -translate-x-1/2"></div>
+                
+                <div class="space-y-16 md:space-y-0 relative">
+                    <!-- Step 1 -->
+                    <div class="md:flex md:items-center md:justify-between">
+                        <div class="md:w-5/12 mb-8 md:mb-0 md:text-right">
+                            <h3 class="text-xl font-bold mb-2">Strategy Development</h3>
+                            <p class="text-dark/70">We start by understanding your business goals, target audience, and competitive landscape to develop a customized advertising strategy.</p>
+                        </div>
+                        
+                        <div class="hidden md:flex absolute left-1/2 w-12 h-12 rounded-full bg-primary text-white items-center justify-center transform -translate-x-1/2">
+                            1
+                        </div>
+                        
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="bg-white p-6 rounded-xl shadow-md">
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                                        <span>Business goal analysis</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                                        <span>Audience research & profiling</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                                        <span>Competitor analysis</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                                        <span>Channel strategy development</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="md:flex md:items-center md:justify-between">
+                        <div class="md:w-5/12 mb-8 md:mb-0 md:text-right md:order-1">
+                            <div class="bg-white p-6 rounded-xl shadow-md">
+                                <ul class="space-y-2">
+                                    <li class="flex items-start md:justify-end md:flex-row-reverse">
+                                        <i class="fa fa-check-circle text-secondary mt-1 ml-0 md:ml-2 md:mr-0"></i>
+                                        <span>Ad creative development</span>
+                                    </li>
+                                    <li class="flex items-start md:justify-end md:flex-row-reverse">
+                                        <i class="fa fa-check-circle text-secondary mt-1 ml-0 md:ml-2 md:mr-0"></i>
+                                        <span>Copywriting & messaging</span>
+                                    </li>
+                                    <li class="flex items-start md:justify-end md:flex-row-reverse">
+                                        <i class="fa fa-check-circle text-secondary mt-1 ml-0 md:ml-2 md:mr-0"></i>
+                                        <span>Landing page optimization</span>
+                                    </li>
+                                    <li class="flex items-start md:justify-end md:flex-row-reverse">
+                                        <i class="fa fa-check-circle text-secondary mt-1 ml-0 md:ml-2 md:mr-0"></i>
+                                        <span>Campaign structure setup</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden md:flex absolute left-1/2 w-12 h-12 rounded-full bg-primary text-white items-center justify-center transform -translate-x-1/2">
+                            2
+                        </div>
+                        
+                        <div class="md:w-5/12 md:pr-8">
+                            <h3 class="text-xl font-bold mb-2">Campaign Creation</h3>
+                            <p class="text-dark/70">Our creative team develops compelling ad content while our marketing specialists set up optimized campaign structures.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="md:flex md:items-center md:justify-between">
+                        <div class="md:w-5/12 mb-8 md:mb-0 md:text-right">
+                            <h3 class="text-xl font-bold mb-2">Launch & Optimization</h3>
+                            <p class="text-dark/70">We launch your campaigns and continuously monitor performance, making data-driven adjustments to maximize results.</p>
+                        </div>
+                        
+                        <div class="hidden md:flex absolute left-1/2 w-12 h-12 rounded-full bg-primary text-white items-center justify-center transform -translate-x-1/2">
+                            3
+                        </div>
+                        
+                        <div class="md:w-5/12 md:pl-8">
+                            <div class="bg-white p-6 rounded-xl shadow-md">
+                                <ul class="space-y-2">
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                                        <span>Phased campaign launch</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                                        <span>Continuous performance monitoring</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                                        <span>A/B testing of creatives & copy</span>
+                                    </li>
+                                    <li class="flex items-start">
+                                        <i class="fa fa-check-circle text-secondary mt-1 mr-2"></i>
+                                        <span>Targeting & bid optimization</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="md:flex md:items-center md:justify-between">
+                        <div class="md:w-5/12 mb-8 md:mb-0 md:text-right md:order-1">
+                            <div class="bg-white p-6 rounded-xl shadow-md">
+                                <ul class="space-y-2">
+                                    <li class="flex items-start md:justify-end md:flex-row-reverse">
+                                        <i class="fa fa-check-circle text-secondary mt-1 ml-0 md:ml-2 md:mr-0"></i>
+                                        <span>Comprehensive performance reports</span>
+                                    </li>
+                                    <li class="flex items-start md:justify-end md:flex-row-reverse">
+                                        <i class="fa fa-check-circle text-secondary mt-1 ml-0 md:ml-2 md:mr-0"></i>
+                                        <span>ROI & KPI analysis</span>
+                                    </li>
+                                    <li class="flex items-start md:justify-end md:flex-row-reverse">
+                                        <i class="fa fa-check-circle text-secondary mt-1 ml-0 md:ml-2 md:mr-0"></i>
+                                        <span>Strategy refinement recommendations</span>
+                                    </li>
+                                    <li class="flex items-start md:justify-end md:flex-row-reverse">
+                                        <i class="fa fa-check-circle text-secondary mt-1 ml-0 md:ml-2 md:mr-0"></i>
+                                        <span>Monthly strategy reviews</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="hidden md:flex absolute left-1/2 w-12 h-12 rounded-full bg-primary text-white items-center justify-center transform -translate-x-1/2">
+                            4
+                        </div>
+                        
+                        <div class="md:w-5/12 md:pr-8">
+                            <h3 class="text-xl font-bold mb-2">Reporting & Refinement</h3>
+                            <p class="text-dark/70">We provide transparent reporting and use insights to refine your campaigns for even better performance over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-20 bg-gradient-to-br from-primary/5 to-accent/5">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold mb-4">Our Pricing Plans</h2>
+                <p class="text-lg text-dark/70">Choose a plan that fits your business goals and budget. All plans include a dedicated account manager and performance reporting.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Starter Plan -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-dark/5">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">Starter</h3>
+                        <p class="text-dark/70 mb-6">Perfect for small businesses getting started with social media advertising.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$2999</span>
+                            <span class="text-dark/60">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>1 TikTok campaign</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>1 Facebook/Instagram campaign</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Up to $5,000 monthly ad spend</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Basic creative development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Weekly performance reports</span>
+                            </li>
+                            <li class="flex items-start text-dark/40">
+                                <i class="fa fa-times mt-1 mr-2"></i>
+                                <span>Advanced audience targeting</span>
+                            </li>
+                            <li class="flex items-start text-dark/40">
+                                <i class="fa fa-times mt-1 mr-2"></i>
+                                <span>Landing page optimization</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-white border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg transition-custom font-medium">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Growth Plan -->
+                <div class="bg-primary text-white rounded-xl shadow-xl overflow-hidden transform scale-105 z-10">
+                    <div class="bg-primary/20 py-2 text-center text-sm font-medium">
+                        Most Popular
+                    </div>
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">Growth</h3>
+                        <p class="text-white/80 mb-6">Ideal for growing businesses looking to scale their advertising efforts.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">$5000</span>
+                            <span class="text-white/80">/month</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>3 TikTok campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>3 Facebook/Instagram campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Up to $15,000 monthly ad spend</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Comprehensive creative development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Bi-weekly performance reports</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Advanced audience targeting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Basic landing page optimization</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-white text-primary hover:bg-white/90 px-6 py-3 rounded-lg transition-custom font-medium">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Enterprise Plan -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden card-hover border border-dark/5">
+                    <div class="p-8">
+                        <h3 class="text-xl font-bold mb-2">Enterprise</h3>
+                        <p class="text-dark/70 mb-6">Custom solutions for established businesses with larger advertising budgets.</p>
+                        <div class="mb-6">
+                            <span class="text-4xl font-bold">Discuss</span>
+                        </div>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Unlimited TikTok campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Unlimited Facebook/Instagram campaigns</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Up to $50,000+ monthly ad spend</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Premium creative development</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Daily performance reports</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Advanced audience targeting</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                                <span>Comprehensive landing page optimization</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="block text-center bg-white border border-primary text-primary hover:bg-primary hover:text-white px-6 py-3 rounded-lg transition-custom font-medium">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-dark/70 mb-4">Need a custom solution for your business?</p>
+                <a href="#contact" class="inline-flex items-center text-primary font-medium hover:underline">
+                    Contact us for a custom quote <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-dark/70">Find answers to common questions about our social media advertising services.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="space-y-6">
+                    <!-- FAQ Item 1 -->
+                    <div class="border border-dark/10 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-light hover:bg-light/70 transition-custom">
+                            <span class="font-semibold text-lg">How long does it take to see results from social media advertising?</span>
+                            <i class="fa fa-plus text-primary transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 pt-0 text-dark/70 border-t border-dark/10">
+                            <p>Most clients start seeing initial results within the first 2-4 weeks of launching their campaigns. However, it typically takes 4-8 weeks to fully optimize campaigns and see consistent, predictable results. This timeline can vary depending on your industry, competition, and advertising budget.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 2 -->
+                    <div class="border border-dark/10 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-light hover:bg-light/70 transition-custom">
+                            <span class="font-semibold text-lg">Do you handle the ad creative production?</span>
+                            <i class="fa fa-plus text-primary transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 pt-0 text-dark/70 border-t border-dark/10">
+                            <p>Yes, all our plans include ad creative development. Our team of designers and copywriters creates compelling visuals and messaging tailored to your target audience and advertising goals. For clients who prefer to provide their own creative assets, we can work with those as well and provide optimization recommendations.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 3 -->
+                    <div class="border border-dark/10 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-light hover:bg-light/70 transition-custom">
+                            <span class="font-semibold text-lg">How is my advertising budget allocated between platforms?</span>
+                            <i class="fa fa-plus text-primary transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 pt-0 text-dark/70 border-t border-dark/10">
+                            <p>We start with a strategic allocation based on your target audience research and industry benchmarks. As we gather performance data, we continuously optimize the budget distribution between TikTok and Facebook/Instagram to maximize your ROI. You'll have full visibility into this allocation and can provide input at any time.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 4 -->
+                    <div class="border border-dark/10 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-light hover:bg-light/70 transition-custom">
+                            <span class="font-semibold text-lg">What kind of reporting do you provide?</span>
+                            <i class="fa fa-plus text-primary transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 pt-0 text-dark/70 border-t border-dark/10">
+                            <p>We provide comprehensive performance reports that include key metrics like reach, engagement, click-through rates, conversions, cost per acquisition, and ROI. Depending on your plan, these reports are delivered weekly, bi-weekly, or daily. We also conduct monthly strategy reviews to discuss performance, insights, and recommendations for optimization.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- FAQ Item 5 -->
+                    <div class="border border-dark/10 rounded-lg overflow-hidden">
+                        <button class="faq-toggle w-full flex justify-between items-center p-6 text-left bg-light hover:bg-light/70 transition-custom">
+                            <span class="font-semibold text-lg">Do you require a long-term contract?</span>
+                            <i class="fa fa-plus text-primary transition-transform duration-300"></i>
+                        </button>
+                        <div class="faq-content hidden p-6 pt-0 text-dark/70 border-t border-dark/10">
+                            <p>We don't require long-term contracts. Our standard agreement is month-to-month, giving you flexibility. However, we do recommend a minimum commitment of 3 months to allow sufficient time for campaign optimization and to see meaningful results. Clients who commit to longer-term partnerships often see better results as we can develop deeper audience insights and more effective strategies over time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary to-accent text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-[clamp(1.8rem,4vw,2.5rem)] font-bold mb-4">Ready to Grow Your Business?</h2>
+                        <p class="text-white/80 text-lg mb-8">Contact us today for a free consultation. Our team will analyze your business goals and recommend a customized social media advertising strategy.</p>
+                        
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fa fa-envelope text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Email Us</h3>
+                                    <p class="text-white/80">bella@qianguyi.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fa fa-phone text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">Call Us</h3>
+                                    <p class="text-white/80">+86 15100288381</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fa fa-whatsapp text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-lg mb-1">WhatsApp</h3>
+                                    <p class="text-white/80">+86 15100288381</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <div class="bg-white text-dark p-8 rounded-xl shadow-xl">
+                            <h3 class="text-2xl font-bold mb-6">Request a Free Consultation</h3>
+                        <!-- 添加 id 以便在 JS 中選取 -->
+                        <form id="contact-form" class="bg-light p-8 rounded-xl shadow-lg">
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                    <input type="text" id="first-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                                    <input type="text" id="last-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="company" class="block text-gray-700 font-medium mb-2">Company Name *</label>
+                                <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                                    <option value="">Select a service</option>
+                                    <option value="seo">SEO Optimization</option>
+                                    <option value="ads">Google Ads Management</option>
+                                    <option value="analytics">Traffic Analytics</option>
+                                    <option value="all">Complete Traffic Package</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Tell Us About Your Goals</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                Send Message
+                            </button>
+                            
+                            <p class="text-gray-500 text-sm mt-4 text-center">
+                                By submitting, you agree to our Privacy Policy and Terms of Service
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal/Popup for Thank You Message -->
+    <!-- 更新後的樣式：淡藍色玻璃質感，圓角更大，文字改為兩行並使用白色 -->
+    <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 backdrop-blur-sm">
+        <div class="bg-blue-200/50 p-8 rounded-3xl shadow-2xl text-center border border-blue-300/50 backdrop-blur-xl">
+            <!-- 調整為兩行文字 -->
+            <p class="text-2xl font-poppins font-bold text-white text-shadow mb-2">Thank you</p>
+            <p class="text-lg font-poppins text-white text-shadow">we will reply you as soon as possible</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 40,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate elements on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('animate-visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // 新增的程式碼：處理表單提交並顯示彈出框
+        const contactForm = document.getElementById('contact-form');
+        const modal = document.getElementById('modal');
+
+        contactForm.addEventListener('submit', function(event) {
+            // 阻止表單的默認提交行為，防止頁面刷新
+            event.preventDefault();
+
+            // 顯示彈出框
+            modal.classList.remove('hidden');
+
+            // 3秒後隱藏彈出框
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
+    

@@ -1,0 +1,563 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVELUCK | Web Design & SEO Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        dark: '#1D2939',
+                        light: '#F9FAFB',
+                        accent: '#722ED1'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-custom {
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    </style>
+</head>
+<body class="font-inter text-dark bg-light antialiased">
+    <!-- Hero Section -->
+    <section class="pt-16 pb-20 md:pt-24 md:pb-32 bg-gradient-to-br from-blue-50 to-indigo-50 overflow-hidden">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-dark mb-6">
+                        GIVELUCK Provides<br><span class="text-primary">Web & SEO Optimization Services</span>
+                    </h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-xl">Professional web design and SEO optimization solutions to help your business grow online and outperform competitors in the market.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-primary hover:bg-primary/90 text-white px-8 py-4 rounded-lg font-semibold text-center transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">Start Your Project</a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-2xl overflow-hidden shadow-2xl transform hover:scale-[1.02] transition-custom">
+                        <img src="https://picsum.photos/id/0/800/600" alt="Web Design and SEO Services" class="w-full h-auto">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-64 h-64 bg-secondary/20 rounded-full blur-3xl -z-10"></div>
+                    <div class="absolute -top-6 -right-6 w-64 h-64 bg-primary/20 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6">Our Digital Services</h2>
+                <p class="text-lg text-gray-600">Comprehensive solutions to enhance your online presence and drive business growth through strategic design and optimization.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Web Design Service -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-desktop text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Custom Web Design</h3>
+                    <p class="text-gray-600 mb-6">Tailor-made websites that reflect your brand identity and provide exceptional user experiences across all devices.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Responsive design</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Conversion-focused layouts</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Brand-aligned aesthetics</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium hover:text-primary/80 transition-custom flex items-center">
+                        Learn more <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- SEO Service -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-search text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">SEO Optimization</h3>
+                    <p class="text-gray-600 mb-6">Data-driven strategies to improve your search rankings, increase organic traffic, and attract quality leads.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Technical SEO audits</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Content optimization</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Local SEO targeting</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium hover:text-primary/80 transition-custom flex items-center">
+                        Learn more <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- E-commerce Solutions -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-shopping-cart text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">E-commerce Solutions</h3>
+                    <p class="text-gray-600 mb-6">Powerful online stores with seamless checkout processes and features to maximize your sales potential.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Secure payment integration</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Product management</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Conversion optimization</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium hover:text-primary/80 transition-custom flex items-center">
+                        Learn more <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Content Strategy -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-file-text text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Content Strategy</h3>
+                    <p class="text-gray-600 mb-6">Compelling content that engages your audience, builds authority, and supports your SEO efforts.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>SEO-friendly copywriting</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Content calendar planning</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Brand voice development</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium hover:text-primary/80 transition-custom flex items-center">
+                        Learn more <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Analytics & Reporting -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-bar-chart text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Analytics & Reporting</h3>
+                    <p class="text-gray-600 mb-6">Clear insights into your website performance with customized reports and actionable recommendations.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Custom dashboard setup</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Performance tracking</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>ROI measurement</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium hover:text-primary/80 transition-custom flex items-center">
+                        Learn more <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Maintenance & Support -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-custom transform hover:-translate-y-1">
+                    <div class="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa fa-wrench text-2xl text-primary"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Maintenance & Support</h3>
+                    <p class="text-gray-600 mb-6">Ongoing website maintenance to ensure optimal performance, security, and up-to-date functionality.</p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Regular updates</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Security monitoring</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa fa-check text-green-500 mr-2"></i>
+                            <span>Priority support</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium hover:text-primary/80 transition-custom flex items-center">
+                        Learn more <i class="fa fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6">Our Proven Process</h2>
+                <p class="text-lg text-gray-600">A streamlined approach to delivering exceptional digital solutions that align with your business goals.</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Process Timeline Line -->
+                <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 transform -translate-x-1/2"></div>
+                
+                <div class="space-y-12 md:space-y-0 relative">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                            <h3 class="text-xl font-bold mb-3">Discovery & Strategy</h3>
+                            <p class="text-gray-600">We start by understanding your business, goals, target audience, and competitive landscape to develop a tailored strategy.</p>
+                        </div>
+                        <div class="md:w-12 flex justify-center relative">
+                            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10">1</div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12"></div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="md:w-12 flex justify-center relative">
+                            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10">2</div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0">
+                            <h3 class="text-xl font-bold mb-3">Design & Development</h3>
+                            <p class="text-gray-600">Our team creates custom designs and develops a responsive website with a focus on user experience and conversion optimization.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                            <h3 class="text-xl font-bold mb-3">SEO & Optimization</h3>
+                            <p class="text-gray-600">We implement technical SEO, optimize content, and ensure your website is structured to perform well in search engine rankings.</p>
+                        </div>
+                        <div class="md:w-12 flex justify-center relative">
+                            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10">3</div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12"></div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 hidden md:block"></div>
+                        <div class="md:w-12 flex justify-center relative">
+                            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10">4</div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0">
+                            <h3 class="text-xl font-bold mb-3">Launch & Monitor</h3>
+                            <p class="text-gray-600">After thorough testing, we launch your website and implement analytics to monitor performance and make data-driven improvements.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-1/2 md:pr-12 md:text-right">
+                            <h3 class="text-xl font-bold mb-3">Growth & Refinement</h3>
+                            <p class="text-gray-600">We provide ongoing support, regular updates, and continuous optimization to ensure your website continues to drive results.</p>
+                        </div>
+                        <div class="md:w-12 flex justify-center relative">
+                            <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold z-10">5</div>
+                        </div>
+                        <div class="md:w-1/2 md:pl-12"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="py-20 bg-primary/5">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6">Proven Results</h2>
+                <p class="text-lg text-gray-600">Our strategies deliver measurable outcomes for businesses across various industries.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Performance Metrics</h3>
+                        <div class="space-y-6">
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium">Organic Traffic Growth</span>
+                                    <span class="text-primary font-bold">+189%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-primary h-2.5 rounded-full" style="width: 89%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium">Conversion Rate Improvement</span>
+                                    <span class="text-primary font-bold">+47%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-primary h-2.5 rounded-full" style="width: 47%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium">Keyword Rankings</span>
+                                    <span class="text-primary font-bold">Top 10: +63</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-primary h-2.5 rounded-full" style="width: 63%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-medium">Page Load Speed</span>
+                                    <span class="text-primary font-bold">Improved: 72%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-2.5">
+                                    <div class="bg-primary h-2.5 rounded-full" style="width: 72%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-2xl font-bold mb-6">Traffic Growth</h3>
+                    <div class="h-80">
+                        <canvas id="trafficChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gradient-to-br from-primary/5 to-indigo-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="flex flex-col lg:flex-row">
+                    <div class="w-full lg:w-1/2 p-8 md:p-12">
+                        <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6">Get in Touch</h2>
+                        <p class="text-lg text-gray-600 mb-8">Ready to transform your online presence? Contact us today for a free consultation and quote.</p>
+                        
+                         <!-- 添加 id 以便在 JS 中選取 -->
+                        <form id="contact-form" class="bg-light p-8 rounded-xl shadow-lg">
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                    <input type="text" id="first-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                                    <input type="text" id="last-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="company" class="block text-gray-700 font-medium mb-2">Company Name *</label>
+                                <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                                    <option value="">Select a service</option>
+                                    <option value="seo">SEO Optimization</option>
+                                    <option value="ads">Google Ads Management</option>
+                                    <option value="analytics">Traffic Analytics</option>
+                                    <option value="all">Complete Traffic Package</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Tell Us About Your Goals</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                    <div class="w-full lg:w-1/2 bg-primary p-8 md:p-12 text-white">
+                        <h3 class="text-2xl font-bold mb-6">Contact Information</h3>
+                        <div class="space-y-6 mb-12">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-4">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Phone</h4>
+                                    <p>+86 15100288381</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center mr-4">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>Bella@qianguyi.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12 p-6 bg-white/10 rounded-xl">
+                            <h4 class="font-bold text-xl mb-2">Free Consultation</h4>
+                            <p class="mb-4">Schedule a no-obligation consultation to discuss your project needs.</p>
+                            <a href="tel:+8615100288381" class="inline-block bg-white text-primary px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-custom">
+                                +86 15100288381
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6">Ready to Grow Your Business Online?</h2>
+                <p class="text-xl text-white/80 mb-8">Let's discuss how our web design and SEO services can help you achieve your business goals.</p>
+                <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contact" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold transition-custom shadow-lg hover:shadow-xl">
+                        Get Started Today
+                    </a>
+                    <a href="#" class="border-2 border-white text-white hover:bg-white/10 px-8 py-4 rounded-lg font-semibold transition-custom">
+                        Learn More About Our Process
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg opacity-0 invisible transition-custom z-50">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+      <!-- Modal/Popup for Thank You Message -->
+    <!-- 更新後的樣式：淡藍色玻璃質感，圓角更大，文字改為兩行並使用白色 -->
+    <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 backdrop-blur-sm">
+        <div class="bg-blue-200/50 p-8 rounded-3xl shadow-2xl text-center border border-blue-300/50 backdrop-blur-xl">
+            <!-- 調整為兩行文字 -->
+            <p class="text-2xl font-poppins font-bold text-white text-shadow mb-2">Thank you</p>
+            <p class="text-lg font-poppins text-white text-shadow">we will reply you as soon as possible</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 40,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate elements on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('animate-visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // 新增的程式碼：處理表單提交並顯示彈出框
+        const contactForm = document.getElementById('contact-form');
+        const modal = document.getElementById('modal');
+
+        contactForm.addEventListener('submit', function(event) {
+            // 阻止表單的默認提交行為，防止頁面刷新
+            event.preventDefault();
+
+            // 顯示彈出框
+            modal.classList.remove('hidden');
+
+            // 3秒後隱藏彈出框
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
+    

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BrandBoost | Strategic Marketing & Branding Agency</title>
+  
+  <!-- External Resources -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#0F3460', // Deep blue - professional and trustworthy
+            secondary: '#E94560', // Accent red - attention-grabbing
+            neutral: {
+              100: '#F5F5F5',
+              200: '#E5E5E5',
+              300: '#D4D4D4',
+              400: '#A3A3A3',
+              500: '#737373',
+              600: '#525252',
+              700: '#404040',
+              800: '#262626',
+              900: '#171717',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'system-ui', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif']
+          },
+        },
+      }
+    }
+  </script>
+  
+  <!-- Custom Styles -->
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      }
+      .transition-custom {
+        transition: all 0.3s ease-in-out;
+      }
+    }
+  </style>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body class="font-sans text-neutral-800 bg-white">
+
+  <!-- Hero Section -->
+  <section class="relative h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background Image with Overlay -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://picsum.photos/id/1076/1920/1080" alt="Business team collaborating in a modern office" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-primary bg-opacity-70"></div>
+    </div>
+    
+    <!-- Hero Content -->
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+      <h1 class="font-display font-bold text-[clamp(2.5rem,6vw,4.5rem)] text-white leading-tight mb-6">
+        Elevate Your Brand's <span class="text-secondary">Potential</span>
+      </h1>
+      <p class="text-[clamp(1rem,2vw,1.25rem)] text-white text-opacity-90 max-w-3xl mx-auto mb-10">
+        Strategic marketing and brand management solutions that drive growth, engagement, and long-term success for your business.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a href="#contact" class="bg-secondary hover:bg-opacity-90 text-white font-semibold py-3 px-8 rounded-md transition-custom transform hover:-translate-y-1 text-lg">
+          Start a Project
+        </a>
+        <a href="#services" class="bg-white bg-opacity-10 backdrop-blur-sm hover:bg-opacity-20 text-white border border-white border-opacity-30 font-semibold py-3 px-8 rounded-md transition-custom transform hover:-translate-y-1 text-lg">
+          Learn More
+        </a>
+      </div>
+      
+      <!-- Scroll Indicator -->
+      <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <a href="#services" class="text-white text-opacity-80 hover:text-white transition-custom">
+          <i class="fa fa-chevron-down text-2xl"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-neutral-100">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16">
+        <h2 class="font-display font-bold text-[clamp(1.75rem,4vw,2.5rem)] text-primary mb-4">Our Services</h2>
+        <p class="text-neutral-600 max-w-2xl mx-auto text-lg">Comprehensive solutions tailored to elevate your brand's presence and drive measurable results in the marketplace.</p>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Service Card 1 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform transition-custom hover:-translate-y-2 hover:shadow-xl">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-line-chart text-primary text-2xl"></i>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-primary mb-3">Brand Strategy</h3>
+          <p class="text-neutral-600 mb-5">Develop a comprehensive brand strategy that defines your positioning, messaging, and competitive advantage in the market.</p>
+          <a href="#contact" class="text-secondary font-medium inline-flex items-center hover:underline">
+            Learn More <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        
+        <!-- Service Card 2 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform transition-custom hover:-translate-y-2 hover:shadow-xl">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-paint-brush text-primary text-2xl"></i>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-primary mb-3">Visual Identity</h3>
+          <p class="text-neutral-600 mb-5">Create a distinctive visual identity system including logo design, color palettes, typography, and brand guidelines.</p>
+          <a href="#contact" class="text-secondary font-medium inline-flex items-center hover:underline">
+            Learn More <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        
+        <!-- Service Card 3 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform transition-custom hover:-translate-y-2 hover:shadow-xl">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-bullhorn text-primary text-2xl"></i>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-primary mb-3">Digital Marketing</h3>
+          <p class="text-neutral-600 mb-5">Implement data-driven digital marketing campaigns across search, social, and display channels to drive traffic and conversions.</p>
+          <a href="#contact" class="text-secondary font-medium inline-flex items-center hover:underline">
+            Learn More <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        
+        <!-- Service Card 4 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform transition-custom hover:-translate-y-2 hover:shadow-xl">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-users text-primary text-2xl"></i>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-primary mb-3">Social Media Management</h3>
+          <p class="text-neutral-600 mb-5">Build and engage your community through strategic content creation, platform management, and social media advertising.</p>
+          <a href="#contact" class="text-secondary font-medium inline-flex items-center hover:underline">
+            Learn More <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        
+        <!-- Service Card 5 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform transition-custom hover:-translate-y-2 hover:shadow-xl">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-file-text text-primary text-2xl"></i>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-primary mb-3">Content Creation</h3>
+          <p class="text-neutral-600 mb-5">Develop compelling content including copywriting, photography, videography, and graphic design that resonates with your audience.</p>
+          <a href="#contact" class="text-secondary font-medium inline-flex items-center hover:underline">
+            Learn More <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+        
+        <!-- Service Card 6 -->
+        <div class="bg-white rounded-xl shadow-lg p-8 transform transition-custom hover:-translate-y-2 hover:shadow-xl">
+          <div class="w-14 h-14 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mb-6">
+            <i class="fa fa-bar-chart text-primary text-2xl"></i>
+          </div>
+          <h3 class="font-display font-semibold text-xl text-primary mb-3">Analytics & Reporting</h3>
+          <p class="text-neutral-600 mb-5">Monitor campaign performance, track key metrics, and provide actionable insights to optimize your marketing efforts.</p>
+          <a href="#contact" class="text-secondary font-medium inline-flex items-center hover:underline">
+            Learn More <i class="fa fa-arrow-right ml-2"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-16">
+          <h2 class="font-display font-bold text-[clamp(1.75rem,4vw,2.5rem)] text-primary mb-4">Get in Touch</h2>
+          <p class="text-neutral-600 max-w-2xl mx-auto text-lg">Ready to elevate your brand? Contact us today to discuss how we can help you achieve your marketing goals.</p>
+        </div>
+         <!-- 添加 id 以便在 JS 中選取 -->
+                        <form id="contact-form" class="bg-light p-8 rounded-xl shadow-lg">
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                    <input type="text" id="first-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                                    <input type="text" id="last-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="company" class="block text-gray-700 font-medium mb-2">Company Name *</label>
+                                <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                                    <option value="">Select a service</option>
+                                    <option value="seo">SEO Optimization</option>
+                                    <option value="ads">Google Ads Management</option>
+                                    <option value="analytics">Traffic Analytics</option>
+                                    <option value="all">Complete Traffic Package</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Tell Us About Your Goals</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                Send Message
+                            </button>
+            </form>
+          </div>
+          
+          <div class="lg:w-1/3">
+            <div class="h-full flex flex-col justify-between">
+              <!-- Contact Info -->
+              <div>
+                <h3 class="font-display font-semibold text-2xl text-primary mb-6">Contact Information</h3>
+                
+                <div class="space-y-6">                  
+                  <div class="flex items-start">
+                    <div class="w-12 h-12 bg-primary bg-opacity-10 rounded-lg flex items-center justify-center mr-4 flex-shrink-0">
+                      <i class="fa fa-envelope text-primary text-xl"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-semibold text-primary mb-1">Email Address</h4>
+                      <p class="text-neutral-600">Bella@qianguyi.com</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Modal/Popup for Thank You Message -->
+    <!-- 更新後的樣式：淡藍色玻璃質感，圓角更大，文字改為兩行並使用白色 -->
+    <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 backdrop-blur-sm">
+        <div class="bg-blue-200/50 p-8 rounded-3xl shadow-2xl text-center border border-blue-300/50 backdrop-blur-xl">
+            <!-- 調整為兩行文字 -->
+            <p class="text-2xl font-poppins font-bold text-white text-shadow mb-2">Thank you</p>
+            <p class="text-lg font-poppins text-white text-shadow">we will reply you as soon as possible</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 40,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate elements on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('animate-visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // 新增的程式碼：處理表單提交並顯示彈出框
+        const contactForm = document.getElementById('contact-form');
+        const modal = document.getElementById('modal');
+
+        contactForm.addEventListener('submit', function(event) {
+            // 阻止表單的默認提交行為，防止頁面刷新
+            event.preventDefault();
+
+            // 顯示彈出框
+            modal.classList.remove('hidden');
+
+            // 3秒後隱藏彈出框
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 3000);
+        });
+    </script>
+</body>
+</html>
+    
