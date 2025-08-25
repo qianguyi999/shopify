@@ -1,0 +1,431 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIVELUCK | Google Traffic Generation Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.8/dist/chart.umd.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <!-- 新增 Poppins 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#165DFF',
+                        secondary: '#36CFC9',
+                        accent: '#FF7D00',
+                        dark: '#1D2129',
+                        light: '#F2F3F5'
+                    },
+                    fontFamily: {
+                        inter: ['Inter', 'sans-serif'],
+                        poppins: ['Poppins', 'sans-serif'], // 新增 Poppins 字體
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer utilities {
+            .content-auto {
+                content-visibility: auto;
+            }
+            .text-shadow {
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            .transition-custom {
+                transition: all 0.3s ease-in-out;
+            }
+            /* 玻璃質感的通用樣式 */
+            .glassmorphism {
+                background-color: rgba(255, 255, 255, 0.2);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 1.5rem; /* 更多圓角 */
+            }
+        }
+    </style>
+</head>
+<body class="font-inter text-dark bg-white">
+    <!-- Hero Section -->
+    <section class="pt-16 pb-20 md:pt-24 md:pb-32 bg-gradient-to-br from-light to-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="w-full lg:w-1/2 mb-12 lg:mb-0">
+                    <h1 class="text-[clamp(2.5rem,5vw,4rem)] font-bold leading-tight text-dark mb-6">GIVELUCK can solve your Google targeted traffic problems</h1>
+                    <p class="text-lg md:text-xl text-gray-600 mb-8 max-w-xl">We drive targeted Google traffic to your business—no fluff, just qualified leads and measurable results.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-primary hover:bg-primary/90 text-white text-center px-8 py-4 rounded-lg font-semibold text-lg transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                            Get Your Strategy
+                        </a>
+                    </div>
+                </div>
+                <div class="w-full lg:w-1/2 relative">
+                    <div class="relative z-10 rounded-xl overflow-hidden shadow-2xl transform transition-custom hover:scale-[1.02]">
+                        <img src="https://picsum.photos/id/180/800/600" alt="Google traffic dashboard showing growth" class="w-full h-auto">
+                        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
+                            <p class="text-white font-semibold">Average 215% increase in qualified traffic</p>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-40 h-40 bg-secondary/20 rounded-full blur-3xl -z-10"></div>
+                    <div class="absolute -top-6 -left-6 w-40 h-40 bg-primary/20 rounded-full blur-3xl -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6">Our Google Traffic Solutions</h2>
+                <p class="text-lg text-gray-600">
+                    Custom strategies designed to drive high-intent visitors to your website through Google's ecosystem
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-custom border border-gray-100 group">
+                    <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-custom">
+                        <i class="fa fa-search text-primary text-2xl group-hover:text-white transition-custom"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">SEO Optimization</h3>
+                    <p class="text-gray-600 mb-6">
+                        Technical and content strategies to improve your organic rankings for high-value keywords that drive conversions.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span class="text-gray-600">On-page &amp; technical SEO</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span class="text-gray-600">Content optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span class="text-gray-600">Local SEO targeting</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium inline-flex items-center hover:text-primary/80 transition-custom">
+                        Learn more <i class="fa fa-long-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-custom border border-gray-100 group">
+                    <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-custom">
+                        <i class="fa fa-google text-primary text-2xl group-hover:text-white transition-custom"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Google Ads Management</h3>
+                    <p class="text-gray-600 mb-6">
+                        Data-driven PPC campaigns that target ready-to-buy customers with high-converting ad copy and strategic bidding.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span class="text-gray-600">Search &amp; display campaigns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span class="text-gray-600">Conversion rate optimization</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span class="text-gray-600">ROI-focused budget management</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium inline-flex items-center hover:text-primary/80 transition-custom">
+                        Learn more <i class="fa fa-long-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-custom border border-gray-100 group">
+                    <div class="w-14 h-14 rounded-lg bg-primary/10 flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-custom">
+                        <i class="fa fa-line-chart text-primary text-2xl group-hover:text-white transition-custom"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Traffic Analytics</h3>
+                    <p class="text-gray-600 mb-6">
+                        Comprehensive tracking and analysis to understand visitor behavior and continuously optimize your traffic quality.
+                    </p>
+                    <ul class="space-y-2 mb-6">
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span class="text-gray-600">Conversion tracking setup</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span class="text-gray-600">Custom reporting dashboard</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa fa-check text-secondary mt-1 mr-2"></i>
+                            <span class="text-gray-600">Actionable insights &amp; recommendations</span>
+                        </li>
+                    </ul>
+                    <a href="#contact" class="text-primary font-medium inline-flex items-center hover:text-primary/80 transition-custom">
+                        Learn more <i class="fa fa-long-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6">Our Proven 5-Step Process</h2>
+                <p class="text-lg text-gray-600">
+                    A systematic approach to delivering measurable Google traffic results for your business
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-12">
+                <!-- Step 1 -->
+                <div class="bg-light p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-4">1</div>
+                        <h3 class="text-xl font-bold">Strategy Consultation</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        We start by understanding your business goals, target audience, and current online presence to develop a customized strategy.
+                    </p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="bg-light p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-4">2</div>
+                        <h3 class="text-xl font-bold">Comprehensive Research</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        We conduct in-depth keyword research and competitive analysis to identify high-value opportunities for your business.
+                    </p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="bg-light p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-4">3</div>
+                        <h3 class="text-xl font-bold">Campaign Development</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Our team creates and implements tailored Google Ads campaigns and SEO strategies based on our research findings.
+                    </p>
+                </div>
+                
+                <!-- Step 4 -->
+                <div class="bg-light p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-4">4</div>
+                        <h3 class="text-xl font-bold">Monitoring &amp; Optimization</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        We continuously monitor performance and make data-driven adjustments to maximize your traffic quality and conversion rates.
+                    </p>
+                </div>
+                
+                <!-- Step 5 -->
+                <div class="bg-light p-8 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 rounded-full bg-primary text-white flex items-center justify-center font-bold mr-4">5</div>
+                        <h3 class="text-xl font-bold">Reporting &amp; Refinement</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        You receive transparent monthly reports with actionable insights, and we refine strategies based on results and feedback.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full opacity-10">
+            <div class="absolute top-0 left-0 w-64 h-64 rounded-full bg-white -translate-x-1/2 -translate-y-1/2"></div>
+            <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-white translate-x-1/3 translate-y-1/3"></div>
+        </div>
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6 text-white">Ready to Boost Your Google Traffic?</h2>
+                <p class="text-lg text-white/90 mb-10">
+                    Schedule a free consultation to discover how we can drive more qualified visitors to your website and increase your conversions.
+                </p>
+                <a href="#contact" class="inline-block bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Get Your Free Strategy <i class="fa fa-arrow-right ml-2"></i>
+                </a>
+                <p class="text-white/80 mt-4">No obligation, just expert advice tailored to your business</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h2 class="text-[clamp(1.8rem,4vw,3rem)] font-bold mb-6">Let's Start Driving Results</h2>
+                        <p class="text-lg text-gray-600 mb-8">
+                            Fill out the form and one of our Google traffic specialists will contact you within 24 hours to schedule your free consultation.
+                        </p>
+                        
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fa fa-phone text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-1">Call Us</h3>
+                                    <p class="text-gray-600">+86 15100288381</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4 mt-1">
+                                    <i class="fa fa-envelope text-primary"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold mb-1">Email Us</h3>
+                                    <p class="text-gray-600">Bella@qianguyi.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                    
+                    <div>
+                        <!-- 添加 id 以便在 JS 中選取 -->
+                        <form id="contact-form" class="bg-light p-8 rounded-xl shadow-lg">
+                            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="first-name" class="block text-gray-700 font-medium mb-2">First Name *</label>
+                                    <input type="text" id="first-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                                <div>
+                                    <label for="last-name" class="block text-gray-700 font-medium mb-2">Last Name *</label>
+                                    <input type="text" id="last-name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-medium mb-2">Email Address *</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="phone" class="block text-gray-700 font-medium mb-2">Phone Number</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="company" class="block text-gray-700 font-medium mb-2">Company Name *</label>
+                                <input type="text" id="company" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom" required="">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="service" class="block text-gray-700 font-medium mb-2">Service Interested In</label>
+                                <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom">
+                                    <option value="">Select a service</option>
+                                    <option value="seo">SEO Optimization</option>
+                                    <option value="ads">Google Ads Management</option>
+                                    <option value="analytics">Traffic Analytics</option>
+                                    <option value="all">Complete Traffic Package</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Tell Us About Your Goals</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-custom"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-6 rounded-lg transition-custom shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                                Send Message
+                            </button>
+                            
+                            <p class="text-gray-500 text-sm mt-4 text-center">
+                                By submitting, you agree to our Privacy Policy and Terms of Service
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal/Popup for Thank You Message -->
+    <!-- 更新後的樣式：淡藍色玻璃質感，圓角更大，文字改為兩行並使用白色 -->
+    <div id="modal" class="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center hidden z-50 backdrop-blur-sm">
+        <div class="bg-blue-200/50 p-8 rounded-3xl shadow-2xl text-center border border-blue-300/50 backdrop-blur-xl">
+            <!-- 調整為兩行文字 -->
+            <p class="text-2xl font-poppins font-bold text-white text-shadow mb-2">Thank you</p>
+            <p class="text-lg font-poppins text-white text-shadow">we will reply you as soon as possible</p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 40,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Animate elements on scroll
+        const animateOnScroll = () => {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('animate-visible');
+                }
+            });
+        };
+        
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // 新增的程式碼：處理表單提交並顯示彈出框
+        const contactForm = document.getElementById('contact-form');
+        const modal = document.getElementById('modal');
+
+        contactForm.addEventListener('submit', function(event) {
+            // 阻止表單的默認提交行為，防止頁面刷新
+            event.preventDefault();
+
+            // 顯示彈出框
+            modal.classList.remove('hidden');
+
+            // 3秒後隱藏彈出框
+            setTimeout(() => {
+                modal.classList.add('hidden');
+            }, 3000);
+        });
+    </script>
+</body></html>
